@@ -1,12 +1,10 @@
 source 'http://rubygems.org'
 
-# FOR DEVELOPMENT
-	#gem 'rails', '3.0.3'
+	gem 'rails', '3.0.3'
 	#gem 'sqlite3-ruby', :require => 'sqlite3'
 
-# FOR PRODUCTION:
-	gem 'rails', '3.0.0'
-	gem 'mysql', '2.8.1'
+	#gem 'rails', '3.0.0'
+	gem 'mysql'
 
 
 # Bundle edge Rails instead:

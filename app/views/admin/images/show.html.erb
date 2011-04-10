@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @image.name %>
+</p>
+
+<p>
+  <b>Photo file name:</b>
+  <%= @image.photo_file_name %>
+</p>
+
+<p>
+  <b>Photo content type:</b>
+  <%= @image.photo_content_type %>
+</p>
+
+<p>
+  <b>Photo file size:</b>
+  <%= @image.photo_file_size %>
+</p>
+
+<p>
+  <b>Work:</b>
+  <%= @image.work %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_work_image_path(@image.work, @image) %> |
+<%= link_to 'Back', admin_work_images_path(@image.work) %>

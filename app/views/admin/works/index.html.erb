@@ -1,0 +1,34 @@
+<h1>Listing works</h1>
+
+<table class="crud">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+		<th>Images</th>
+		<th>Categories</th>
+    <th></th>
+		<th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @works.each do |work| %>
+  <tr>
+    <td><%= work.name %></td>
+    <td><%= work.description %></td>
+		<td><%= work.images.count %></td>
+		<td><%= work.categories.collect {|c| c.name}.to_sentence %></td>
+		<td><%= link_to admin_images_btn, admin_work_images_path(work) %></td>
+    <td><%= link_to admin_show_btn, admin_work_url(work) %></td>
+    <td><%= link_to admin_edit_btn, edit_admin_work_path(work) %></td>
+    <td><%= link_to admin_delete_btn, admin_work_url(work), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%=admin_add_btn%> <%= link_to (''+' Add a work'), new_admin_work_path %>
+<br>
+<br>
+<%=link_to "Back to overview", admin_root_path %>

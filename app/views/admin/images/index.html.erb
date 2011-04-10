@@ -1,0 +1,20 @@
+<h1>Listing images of <%=@work.name%></h1>
+
+<div class="clearfix">
+<% @images.each do |image| %>
+<div class="list-image">
+	<%= link_to (image_tag image.photo.url(:thumb), :title => image.name ), admin_work_image_url(image.work, image) %>
+	<p><%= image.photo_file_name %></p>
+	<p><%= image.photo_content_type %> <%= image.photo_file_size %></p>
+	<p><%= link_to 'Destroy', admin_work_image_url(image.work, image), :confirm => 'Are you sure?', :method => :delete %></p>
+</div>
+<% end %>
+</div>
+
+<br />
+
+<%= link_to 'New Image', new_admin_work_image_path %>
+<br>
+<%=link_to "Back to works index", admin_works_path %>
+<br>
+<%=link_to "Back to overview", admin_root_path %>

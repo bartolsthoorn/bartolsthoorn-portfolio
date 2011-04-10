@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= @work.name %>
+</h1>
+
+<p>
+  <b>Description:</b>
+  <%= @work.description %>
+</p>
+<p>
+	This one has <%= @work.categories.count %> categories. 
+<%= @work.categories.collect {|c| c.name}.to_sentence %>
+</p>
+<br>
+<%= link_to 'Edit', edit_admin_work_path(@work) %> |
+<%= link_to 'Back', admin_works_path %>

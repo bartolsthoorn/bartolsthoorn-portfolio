@@ -1,0 +1,101 @@
+<!doctype html>  
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Bart Olsthoorn</title>
+  <meta name="description" content="The portfolio site and blog of Bart Olsthoorn, a web developer.">
+  <meta name="author" content="Bart Olsthoorn">
+	<meta name="keywords" content="bart, olsthoorn, developer, Rails, PHP, HTML, CSS" >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <%= stylesheet_link_tag :all %>
+	<%= csrf_meta_tag %>
+	
+	<%= javascript_include_tag "modernizr.min" %>
+	<!-- Hi there, and welcome to my source code. -->
+</head>
+
+<body>
+	<div id="top"></div>
+	<div id="wrapper">
+
+	<%= yield %>
+<!-- <a title="Home" href="/"><img src="/images/menu/menu-home-w.png" /></a> -->
+	<menu class="clearfix">
+		<%= raw(menu_item(root_path, "menu-home", "Home")) %>
+		<li class="l"><img src="/images/menu/menu-delim.png" /></li>
+		<%= raw(menu_item(work_path, "menu-work", "Work")) %>
+		<li class="l"><img src="/images/menu/menu-delim.png" /></li>
+		<%= raw(menu_item("http://blog.bartolsthoorn.nl", "menu-blog", "Blog")) %>
+		<li class="l"><img src="/images/menu/menu-delim.png" /></li>
+		<%= raw(menu_item(contact_path, "menu-contact", "Contact", true)) %>
+	</menu>
+</div>
+
+<div id="bar">
+	<div id="arrow"></div>
+	<section id="wiki">
+		<h3>Portfolio Android App</h3>
+		<p>
+			Ut ornare, felis a scelerisque pellentesque, augue magna vestibulum metus, ut faucibus ante mi sit amet ipsum nisl lacus.<br>
+			<br>
+			Condimentum ut odio. Nunc et nulla non dui. Ut ornare, felis a scelerisque.  <a href="#">read more ›</a>
+		</p>
+	</section>
+	<!--<section id="music">
+		<h3>Music I Listen</h3>
+	</section>-->
+	<section id="music">
+		<h3>&nbsp;</h3>
+	</section>
+	<section id="people">
+		<h3>People talking about my work right now</h3>
+		<div id="activity" class="scroll-pane"></div>
+	</section>
+</div>
+<footer>
+	© <strong>Bart Olsthoorn</strong> - professional by day, indie by night
+</footer>
+
+	<%= javascript_include_tag "jquery.min" %>
+	<%= include_javascripts :workspace %>
+	<script>$.getScript("/javascripts/jquery.tweet.js", function(){
+	$("#activity").tweet({
+	          avatar_size: 32,
+	          count: 4,
+	          query: "TEDxAms+OR+TEDxAmsterdam",
+	          loading_text: "Searching Twitter..."
+	        });
+	$('.scroll-pane').jScrollPane();
+	});
+	</script>
+
+<!--[if lt IE 7 ]>
+<%= javascript_include_tag "dd_belatedpng" %>
+<script> DD_belatedPNG.fix('img, .png_bg'); </script>
+<![endif]-->
+
+
+<script>
+var _gaq = [['_setAccount', 'UA-5535798-2'], ['_trackPageview']];
+(function(d, t) {
+var g = d.createElement(t),
+    s = d.getElementsByTagName(t)[0];
+g.async = true;
+g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g, s);
+})(document, 'script');
+</script>
+
+</body>
+</html>

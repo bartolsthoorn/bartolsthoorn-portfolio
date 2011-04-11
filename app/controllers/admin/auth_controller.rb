@@ -2,7 +2,6 @@ class Admin::AuthController < ApplicationController
   before_filter :isadmin?
   
   def isadmin?
-    puts current_user.inspect
     if (!user_signed_in?)
       redirect_to new_user_session_url
     else

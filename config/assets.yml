@@ -1,8 +1,0 @@
-package_assets: on
-
-javascripts:
-  workspace:
-    - public/javascripts/rails.js
-    - public/javascripts/jquery.easing.js
-    - public/javascripts/jquery.scrollbar.js
-    - public/javascripts/ui.js

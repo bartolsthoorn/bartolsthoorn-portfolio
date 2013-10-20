@@ -1,214 +1,215 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans)
 @import "frameless.scss"
 
-@import "compass/css3/transform"
-@import "compass/typography/lists/horizontal-list"
-@import "compass/typography/text/replacement"
-@import "compass/utilities/general/float"
-@import "compass/css3/inline-block"
-@import "compass/css3/text-shadow"
-
 body
-	background: url(../images/background/grid.png)
-	background-repeat: repeat
-	
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
-	-webkit-font-smoothing: antialiased
-	
+  background: url(../images/background/grid.png)
+  background-repeat: repeat
+  
+  font-family: 'Open Sans', sans-serif
+  -webkit-font-smoothing: antialiased
+  
 p
-	a
-		color: #A21540
-		padding: 0 3px
-		text-decoration: none
-		border-bottom: 1px solid #A21540
+  a
+    color: #A21540
+    padding: 0 3px
+    text-decoration: none
+    border-bottom: 1px solid #A21540
 
 div#top
-	width: 100%
-	height: 6px
-	background-image: url(../images/background/top.png)
-	background-repeat: repeat-x
-	margin-bottom: 45px
+  width: 100%
+  height: 6px
+  background-image: url(../images/background/top.png)
+  background-repeat: repeat-x
+  margin-bottom: 45px
 
 h1
-	+replace-text-with-dimensions("logo.png")
-	margin-bottom: 40px
-	text-align: center
-	width: 100%
+  text-indent: -119988px
+  overflow: hidden
+  text-align: left
+  background-image: url('/images/logo.png')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  width: 941px
+  height: 94px
+  margin-bottom: 40px
+  text-align: center
+  width: 100%
 
 header, #works, #contact
-	width: $cols12
-	margin: 0 auto
+  width: $cols12
+  margin: 0 auto
 
 p
-	font-size: 25px
-	line-height: 30px
-	color: black
-	font-weight: lighter
-	
-	span
-		font-weight: normal
-		font-style: italic
+  font-size: 25px
+  line-height: 30px
+  color: black
+  font-weight: lighter
+  
+  span
+    font-weight: normal
+    font-style: italic
 
 #contact
-	color: #454545
-	p
-		font-size: 14px
+  color: #454545
+  p
+    font-size: 14px
 
-	h3
-		color: #454545
-		font-size: 25px
-		font-weight: lighter
-		line-height: 25px
-		margin-bottom: 5px
-		
-	margin-bottom: 50px
+  h3
+    color: #454545
+    font-size: 25px
+    font-weight: lighter
+    line-height: 25px
+    margin-bottom: 5px
+    
+  margin-bottom: 50px
 
 #touch, #details
-	width: 478px
-	
-	+inline-block
+  width: 478px
+  display: inline-block 
 
 #touch
-	//float: left
-	
+  //float: left
+  
 
 #details
-	text-align: right
-	//float: right
+  text-align: right
+  //float: right
 
 header
-	margin-bottom: 40px
+  margin-bottom: 40px
 
 .work, figure, article
-	display: block
-	width: $cols12
-	height: 250px
-	background-color: transparent
-	background-repeat: no-repeat
-	
+  display: block
+  width: $cols12
+  height: 250px
+  background-color: transparent
+  background-repeat: no-repeat
+  
 .work
-	text-decoration: none
-	margin-bottom: 24px
-	
-	figure
-		-webkit-transition: -webkit-filter 700ms, -webkit-transform 500ms
-		//transition: filter 1s linear, transform 500ms linear, opacity 1s linear
-		+rotateX(0deg, 1000)
-	
-	&:hover
-		figure
-			filter: brightness(15%)
-			-webkit-filter: brightness(0%)
-			-moz-filter: brightness(0%)
-			-ms-filter: brightness(0%)
-			-o-filter: brightness(0%)
-			+rotateX(180deg, 1000)
-			
-			article
-				transition-delay: 200ms
-				opacity: 1
-					
+  text-decoration: none
+  margin-bottom: 24px
+  
+  figure
+  
+  &:hover
+    figure
+      article
+        opacity: 1
+          
 article
-	width: $cols12 * $em - 160px
-	height: 250px - 100px
-	padding-top: 50px
-	padding-bottom: 50px
-	padding-left: 80px
-	padding-right: 80px
-	text-align: center
-	background-color: transparent
-	opacity: 0
-	+rotateX(180deg, 1000)
-	color: white
-	-webkit-transition: 200ms opacity 100ms
-	h2
-		margin-bottom: 10px
-	p
-		color: white
-		font-size: 16px
-		line-height: 20px
+  width: $cols12 * $em - 160px
+  height: 250px - 100px
+  padding-top: 50px
+  padding-bottom: 50px
+  padding-left: 80px
+  padding-right: 80px
+  text-align: center
+  background-color: transparent
+  opacity: 0
+  color: white
+  h2
+    margin-bottom: 10px
+  p
+    color: white
+    font-size: 16px
+    line-height: 20px
 
 .work:nth-child(even) 
-	article
-		background-color: #a41440
-	
+  article
+    background-color: #a41440
+  
 .work:nth-child(odd)
-	article
-		background-color: #66a025
-		
-		
+  article
+    background-color: #66a025
+    
+    
 figure
-	background-position: center center
-	filter: grayscale(100%)
-	-webkit-filter: grayscale(100%)
-	-moz-filter: grayscale(100%)
-	-ms-filter: grayscale(100%)
-	-o-filter: grayscale(100%)
-	
+  background-position: center center
+  filter: grayscale(100%)
+  -webkit-filter: grayscale(100%)
+  -moz-filter: grayscale(100%)
+  -ms-filter: grayscale(100%)
+  -o-filter: grayscale(100%)
+  
 #tedx
-	background-image: url(../images/portfolio/tedx2.png)
-	
+  background-image: url(../images/portfolio/tedx2.png)
+  
 #nu
-	background-image: url(../images/portfolio/nu.png)
-	
+  background-image: url(../images/portfolio/nu.png)
+  
 #sproffer
-	background-image: url(../images/portfolio/sproffer.png)
-	
+  background-image: url(../images/portfolio/sproffer.png)
+  
 #ihearyou
-	background-image: url(../images/portfolio/ihearyou.png)
-	
+  background-image: url(../images/portfolio/ihearyou.png)
+  
 #nvdsp
-	background-image: url(../images/portfolio/nvdsp.png)
-	
+  background-image: url(../images/portfolio/nvdsp.png)
+  
 footer
-	background-image: url(../images/background/bottom.png)
-	background-repeat: repeat-x
-	text-align: center
-	height: 37px
-	line-height: 41px
-	font-size: 12px
-	text-transform: uppercase
-	color: #928D7F
-	
+  background-image: url(../images/background/bottom.png)
+  background-repeat: repeat-x
+  text-align: center
+  height: 37px
+  line-height: 41px
+  font-size: 12px
+  text-transform: uppercase
+  color: #928D7F
+  
 @media screen and (max-width: $cols12)
-	h1
-		+replace-text-with-dimensions("logo-medium.png")
-		text-align: center
-		width: 100%
+  h1
+    text-indent: -119988px
+    overflow: hidden
+    text-align: left
+    background-image: url('/images/logo-medium.png')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    width: 479px
+    height: 49px
+    text-align: center
+    width: 100%
 
-	header, #works, #contact
-		width: 100%
-		
-	.work, figure, article
-		width: 100%
-		overflow: hidden
-		
-	article
-		text-align: center
-		padding: 0px
-		height: 250px
-		
-		h2
-			margin-top: 50px
-			
-		p
-			margin-left: 20px
-			margin-right: 20px
-	
-	header
-		text-align: center
-		p
-			padding-left: 20px
-			padding-right: 20px
-			font-size: 16px
-			
-	#touch, #details
-		display: block
-		margin-bottom: 20px
-		text-align: center
-		width: 100% 
-		
+  header, #works, #contact
+    width: 100%
+    
+  .work, figure, article
+    width: 100%
+    overflow: hidden
+    
+  article
+    text-align: center
+    padding: 0px
+    height: 250px
+    
+    h2
+      margin-top: 50px
+      
+    p
+      margin-left: 20px
+      margin-right: 20px
+  
+  header
+    text-align: center
+    p
+      padding-left: 20px
+      padding-right: 20px
+      font-size: 16px
+      
+  #touch, #details
+    display: block
+    margin-bottom: 20px
+    text-align: center
+    width: 100% 
+    
 @media screen and (max-width: $cols7)
-	h1
-		+replace-text-with-dimensions("logo-small.png")
-		text-align: center
-		width: 100%
+  h1
+    text-indent: -119988px
+    overflow: hidden
+    text-align: left
+    background-image: url('/images/logo-small.png')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    width: 282px
+    height: 29px
+    text-align: center
+    width: 100%

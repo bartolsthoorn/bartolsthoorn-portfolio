@@ -1,64 +1,113 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bart Olsthoorn</title>
+	<meta name="description" content="Bart Olsthoorn — Ph.D. in Physics, Product Engineer at Flower.">
 
-	<link rel="shortcut icon" href="static/images/favicon.ico">
-	<link rel="stylesheet" href="static/css/style.css">
-	
-		<title>Bart Olsthoorn</title>
-	
+	<meta property="og:type" content="profile">
+	<meta property="og:title" content="Bart Olsthoorn">
+	<meta property="og:description" content="Ph.D. in Physics, Product Engineer at Flower.">
+	<meta property="og:url" content="https://bartolsthoorn.nl/">
+	<meta property="og:image" content="https://bartolsthoorn.nl/static/images/avatar2.jpg">
+	<meta name="twitter:card" content="summary">
+
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+	<link rel="stylesheet" href="/static/css/style.css">
 </head>
-
 <body>
-	
-
-	<section id="wrapper">
-		<header class="header">
-			<img id="avatar" class="2x" src="static/images/avatar2.jpg"/>
+	<main>
+		<header>
+			<img src="/static/images/avatar2.jpg" alt="Bart Olsthoorn" width="96" height="96">
 			<h1>Bart Olsthoorn</h1>
-			<h2>Ph.D. in Physics</h2>
+			<p class="tagline">Ph.D. in Physics · Product Engineer at <a href="https://flower.se">Flower</a></p>
 		</header>
-		<header class="header">
-                  <h2>Timeline</h2>
-                </header>
-				<h3>2023-now - Flower Infrastructure Technologies</h3>
-                <p>Sweden, Stockholm</p>
-                <h3>2018-2023 - The Nordic Institute for Theoretical Physics</h3>
-                <p>Sweden, Stockholm (Ph.D. degree)</p>
-                <h3>2015-2018 - Stockholm University</h3>
-                <p>Sweden, Stockholm (MSc Computational Physics)</p>
-		<h3>2015 - The Swedish Institute of Space Physics</h3>
-		<p>Sweden, Kiruna (<a href="http://irf.se">irf.se</a>)</p>
-		<h3>2014 - Laboratory for Astrophysics</h3>
-		<p>The Netherlands, Leiden (<a href="http://www.laboratory-astrophysics.eu">laboratory-astrophysics.eu</a>)</p>
 
-		<header class="header header-top">
-                  <h2>Publications</h2>
-                </header>
-                <p>See my <a href="https://scholar.google.se/citations?user=6NPz_KcAAAAJ" target="_blank">Google Scholar page</a>.</p>
+		<section>
+			<h2>Now</h2>
+			<p>Software for distributed energy assets: residential and C&amp;I batteries, solar, EVs, heat pumps. Using a lot of AI in product work lately.</p>
+		</section>
 
-		<header class="header header-top">
-                  <h2>Contact</h2>
-                </header>
-		<p>Previously worked for various start-up companies.<br>Feel free to <a href="mailto:bart.olsthoorn@gmail.com">mail</a> me or find me on <a href="https://github.com/bartolsthoorn">Github</a>.</p>
-	</section>
+		<section>
+			<h2>Experience</h2>
+			<dl class="timeline">
+				<dt>2023–now</dt>
+				<dd>
+					<strong><a href="https://flower.se">Flower</a></strong>
+					<span>Product Owner / Engineer · Distributed Assets · Stockholm</span>
+				</dd>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="static/js/main.js"></script>
-		<script src="static/js/retina.js"></script>
+				<dt>2012–2017</dt>
+				<dd>
+					<strong>Freelance</strong>
+					<span>ML at Similar.ai (early GANs), Ruby/Elixir at Universal Avenue, Rails at InnerBalloons &amp; Pointer Brand Protection.</span>
+				</dd>
+			</dl>
+		</section>
 
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<section>
+			<h2>Education</h2>
+			<dl class="timeline">
+				<dt>2018–2023</dt>
+				<dd>
+					<strong>KTH Royal Institute of Technology</strong>
+					<span>Ph.D. Physics · thesis: <em>Homology and machine learning for materials informatics</em> · 11 peer-reviewed publications</span>
+				</dd>
 
-  ga('create', 'UA-5535798-2', 'auto');
-  ga('send', 'pageview');
+				<dt>2015–2018</dt>
+				<dd>
+					<strong>Stockholm University</strong>
+					<span>M.Sc. Computational Physics</span>
+				</dd>
+			</dl>
+		</section>
 
-  </script>
+		<section>
+			<h2>Open source</h2>
+			<p>Long-time open-source enthusiast — 500+ stars across repos on <a href="https://github.com/bartolsthoorn">GitHub</a>.</p>
+			<ul class="pubs">
+				<li>
+					<a href="https://github.com/bartolsthoorn/NVDSP"><em>NVDSP</em></a>
+					<span>iOS/macOS audio DSP library · 417★</span>
+				</li>
+				<li>
+					<a href="https://github.com/bartolsthoorn/NQS-numpy"><em>NQS-numpy</em></a>
+					<span>Neural-network quantum states in NumPy · 35★</span>
+				</li>
+				<li>
+					<a href="https://github.com/bartolsthoorn/gohighs"><em>gohighs</em></a>
+					<span>Go bindings for the HiGHS optimizer</span>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Selected publications</h2>
+			<ul class="pubs">
+				<li>
+					<a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.107.115174"><em>Persistent homology of quantum entanglement</em></a>
+					<span>Physical Review B, 2023 · Editors' Suggestion</span>
+				</li>
+				<li>
+					<a href="https://onlinelibrary.wiley.com/doi/10.1002/qute.201900023"><em>Band gap prediction for large organic crystal structures with machine learning</em></a>
+					<span>Advanced Quantum Technologies, 2019</span>
+				</li>
+			</ul>
+			<p>Full list on <a href="https://scholar.google.se/citations?user=6NPz_KcAAAAJ">Google Scholar</a>.</p>
+		</section>
+
+		<section>
+			<h2>Elsewhere</h2>
+			<p class="links">
+				<a href="mailto:bart.olsthoorn@gmail.com">Email</a>
+				<a href="https://github.com/bartolsthoorn">GitHub</a>
+				<a href="https://www.linkedin.com/in/bart-olsthoorn-67423613/">LinkedIn</a>
+			</p>
+		</section>
+	</main>
 </body>
 </html>

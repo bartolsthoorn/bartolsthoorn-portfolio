@@ -1,6 +1,6 @@
-#let accent = rgb("#9a3f1a")
-#let muted  = rgb("#6b625a")
-#let fg     = rgb("#382f2a")
+#let accent = rgb("#5e6e2f")
+#let muted  = rgb("#5f6a58")
+#let fg     = rgb("#2e342a")
 
 #set document(
   title: "Bart Olsthoorn — CV",

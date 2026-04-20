@@ -1,21 +1,21 @@
 :root {
 	color-scheme: light dark;
-	--bg: oklch(98.5% 0.008 75);
-	--fg: oklch(22% 0.012 60);
-	--muted: oklch(52% 0.015 65);
-	--accent: oklch(52% 0.135 55);
-	--border: oklch(22% 0.012 60 / 0.1);
+	--bg: oklch(98.5% 0.006 120);
+	--fg: oklch(22% 0.010 125);
+	--muted: oklch(52% 0.013 125);
+	--accent: oklch(48% 0.09 130);
+	--border: oklch(22% 0.010 125 / 0.1);
 	--font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg: oklch(16% 0.008 60);
-		--fg: oklch(92% 0.012 80);
-		--muted: oklch(64% 0.018 70);
-		--accent: oklch(72% 0.125 62);
-		--border: oklch(92% 0.012 80 / 0.1);
+		--bg: oklch(16% 0.007 125);
+		--fg: oklch(92% 0.010 130);
+		--muted: oklch(64% 0.016 128);
+		--accent: oklch(75% 0.10 130);
+		--border: oklch(92% 0.010 130 / 0.1);
 	}
 }
 

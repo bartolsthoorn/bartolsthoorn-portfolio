@@ -107,10 +107,11 @@
 
 #section[Profile]
 
-Software engineer with a physics Ph.D., now building product and
-infrastructure for distributed energy assets: batteries, solar, EVs,
-heat pumps. Equally comfortable building products, leading a small
-team, or training a model.
+Full-stack software engineer with a physics Ph.D., building product
+end-to-end: data pipelines on Databricks, backend APIs, and the web
+interfaces on top. Increasingly working with LLMs, RAG, and agents in
+production. Equally comfortable shipping a feature across the stack,
+leading a small team, or training a model.
 
 // ── Experience ──────────────────────────────────────────────────────────────
 
@@ -119,15 +120,15 @@ team, or training a model.
 #entry(
   "2023 – now",
   [#link("https://flower.se")[Flower]],
-  meta: [Stockholm · Go, AWS],
+  meta: [Stockholm · Python, Go, AWS, Databricks],
 )
 
 #role(
   "Feb 2026 – now",
   [Product Owner / Product Engineer · Distributed Assets],
   [
-    Leveraging AI to build our systems while supporting the team on
-    business meetings and prioritisation.
+    Leveraging LLMs and agents to build our systems while supporting the
+    team on business meetings and prioritisation.
   ],
 )
 
@@ -135,8 +136,10 @@ team, or training a model.
   "Dec 2024 – Feb 2026",
   [Software Engineer · Distributed Assets],
   [
-    Developed Flower Bridge, the integration API for distributed energy
-    assets: residential and C&I batteries, solar, EVs, heat pumps.
+    Built Flower Bridge end-to-end — the integration platform for
+    distributed energy assets (residential and C&I batteries, solar, EVs,
+    heat pumps): Databricks data pipelines, backend APIs, and operator
+    web interfaces.
   ],
 )
 
@@ -229,10 +232,13 @@ Highlights:
   column-gutter: 14pt,
   row-gutter: 4pt,
   text(fill: muted, size: 9pt)[Core],
-  [Go, Python, AWS, Databricks, PostgreSQL, distributed systems, product engineering],
+  [Python, Go, full-stack web (APIs & interfaces), AWS, Databricks, PostgreSQL, distributed systems, product engineering],
+
+  text(fill: muted, size: 9pt)[AI / ML],
+  [LLMs, RAG and agents in production; PyTorch; Pandas / NumPy / scikit-learn; model training & evaluation],
 
   text(fill: muted, size: 9pt)[Past],
-  [Ruby / Rails, Elixir, PyTorch, Swift / Objective-C],
+  [Ruby / Rails, Elixir, Swift / Objective-C],
 
   text(fill: muted, size: 9pt)[Research],
   [Machine learning for materials, topological data analysis, quantum systems],

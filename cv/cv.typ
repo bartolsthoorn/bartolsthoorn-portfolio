@@ -109,9 +109,9 @@
 
 Full-stack software engineer with a physics Ph.D., building product
 end-to-end: data pipelines on Databricks, backend APIs, and the web
-interfaces on top. Increasingly working with LLMs, RAG, and agents in
-production. Equally comfortable shipping a feature across the stack,
-leading a small team, or training a model.
+interfaces on top. Building a lot with agents and agentic loops in
+production. Equally comfortable shipping across the stack, leading a
+small team, or training a model.
 
 // ── Experience ──────────────────────────────────────────────────────────────
 
@@ -127,8 +127,8 @@ leading a small team, or training a model.
   "Feb 2026 – now",
   [Product Owner / Product Engineer · Distributed Assets],
   [
-    Leveraging LLMs and agents to build our systems while supporting the
-    team on business meetings and prioritisation.
+    Building our systems with agentic loops; owning roadmap and
+    prioritisation for the team.
   ],
 )
 
@@ -138,8 +138,8 @@ leading a small team, or training a model.
   [
     Built Flower Bridge end-to-end — the integration platform for
     distributed energy assets (residential and C&I batteries, solar, EVs,
-    heat pumps): Databricks data pipelines, backend APIs, and operator
-    web interfaces.
+    heat pumps): Databricks data pipelines, backend APIs, and web
+    interfaces.
   ],
 )
 
@@ -235,7 +235,7 @@ Highlights:
   [Python, Go, full-stack web (APIs & interfaces), AWS, Databricks, PostgreSQL, distributed systems, product engineering],
 
   text(fill: muted, size: 9pt)[AI / ML],
-  [LLMs, RAG and agents in production; PyTorch; Pandas / NumPy / scikit-learn; model training & evaluation],
+  [Agents and agentic loops in production; PyTorch; Pandas / NumPy / scikit-learn; model training & evaluation],
 
   text(fill: muted, size: 9pt)[Past],
   [Ruby / Rails, Elixir, Swift / Objective-C],

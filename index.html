@@ -13,11 +13,45 @@
 	<meta property="og:image" content="https://bartolsthoorn.nl/static/images/avatar2.jpg">
 	<meta name="twitter:card" content="summary">
 
+	<link rel="canonical" href="https://bartolsthoorn.nl/">
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fbf6">
+	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0e0b">
+
 	<link rel="shortcut icon" href="/static/images/favicon.ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+	<link rel="preload" href="/static/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" href="/static/css/style.css">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Bart Olsthoorn",
+		"url": "https://bartolsthoorn.nl/",
+		"image": "https://bartolsthoorn.nl/static/images/avatar2.jpg",
+		"jobTitle": "Product Engineer",
+		"worksFor": {
+			"@type": "Organization",
+			"name": "Flower",
+			"url": "https://flower.se"
+		},
+		"alumniOf": [
+			{
+				"@type": "CollegeOrUniversity",
+				"name": "KTH Royal Institute of Technology"
+			},
+			{
+				"@type": "CollegeOrUniversity",
+				"name": "Stockholm University"
+			}
+		],
+		"email": "mailto:bart.olsthoorn@gmail.com",
+		"sameAs": [
+			"https://github.com/bartolsthoorn",
+			"https://www.linkedin.com/in/bart-olsthoorn-67423613/",
+			"https://scholar.google.se/citations?user=6NPz_KcAAAAJ"
+		]
+	}
+	</script>
 </head>
 <body>
 	<main>
@@ -33,12 +67,24 @@
 		</section>
 
 		<section>
-			<h2>Experience</h2>
+			<h2>Experience &amp; education</h2>
 			<dl class="timeline">
 				<dt>2023–now</dt>
 				<dd>
 					<strong><a href="https://flower.se">Flower</a></strong>
 					<span>Product Owner / Engineer · Distributed Assets · Stockholm</span>
+				</dd>
+
+				<dt>2018–2023</dt>
+				<dd>
+					<strong>KTH Royal Institute of Technology</strong>
+					<span>Ph.D. Physics · thesis: <em>Homology and machine learning for materials informatics</em> · 11 peer-reviewed publications</span>
+				</dd>
+
+				<dt>2015–2018</dt>
+				<dd>
+					<strong>Stockholm University</strong>
+					<span>M.Sc. Computational Physics</span>
 				</dd>
 
 				<dt>2012–2017</dt>
@@ -60,23 +106,6 @@
 
 				<dt>Past</dt>
 				<dd><span>Ruby / Rails, Elixir, Swift / Objective-C</span></dd>
-			</dl>
-		</section>
-
-		<section>
-			<h2>Education</h2>
-			<dl class="timeline">
-				<dt>2018–2023</dt>
-				<dd>
-					<strong>KTH Royal Institute of Technology</strong>
-					<span>Ph.D. Physics · thesis: <em>Homology and machine learning for materials informatics</em> · 11 peer-reviewed publications</span>
-				</dd>
-
-				<dt>2015–2018</dt>
-				<dd>
-					<strong>Stockholm University</strong>
-					<span>M.Sc. Computational Physics</span>
-				</dd>
 			</dl>
 		</section>
 

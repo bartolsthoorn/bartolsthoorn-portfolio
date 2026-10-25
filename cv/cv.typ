@@ -107,10 +107,11 @@
 
 #section[Profile]
 
-Full-stack software engineer with a physics Ph.D., building product
-end-to-end: data pipelines on Databricks, backend APIs, and the web
-interfaces on top. Builds much of it with AI agents as a development
-tool. Equally comfortable leading a small team or training a model.
+I'm a full-stack software engineer with a physics Ph.D. I build product
+end-to-end, from data pipelines on Databricks to backend APIs and the
+web interfaces on top, and do much of that work with AI agents as a
+development tool. I'm equally comfortable leading a small team or
+training a model.
 
 // ── Experience ──────────────────────────────────────────────────────────────
 

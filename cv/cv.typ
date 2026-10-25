@@ -3,7 +3,7 @@
 #let fg     = rgb("#2e342a")
 
 #set document(
-  title: "Bart Olsthoorn — CV",
+  title: "Bart Olsthoorn, CV",
   author: "Bart Olsthoorn",
 )
 
@@ -88,7 +88,7 @@
 
   #v(-4pt)
   #text(fill: muted, size: 10.5pt)[
-    Ph.D. in Physics · Product Engineer at Flower
+    Ph.D. in Physics · Product Engineer at Flower · Founder of Glimt
   ]
 
   #v(2pt)
@@ -109,13 +109,22 @@
 
 Full-stack software engineer with a physics Ph.D., building product
 end-to-end: data pipelines on Databricks, backend APIs, and the web
-interfaces on top. Building a lot with agents and agentic loops in
-production. Equally comfortable shipping across the stack, leading a
-small team, or training a model.
+interfaces on top. Builds much of it with AI agents as a development
+tool. Equally comfortable leading a small team or training a model.
 
 // ── Experience ──────────────────────────────────────────────────────────────
 
 #section[Experience]
+
+#entry(
+  "2026 – now",
+  [#link("https://glimtinstrument.se")[Glimt]],
+  meta: [Founder · Sweden],
+  body: [
+    Building scientific instruments, starting with a scanning tunnelling
+    microscope for atomic-resolution imaging.
+  ],
+)
 
 #entry(
   "2023 – now",
@@ -127,8 +136,8 @@ small team, or training a model.
   "Feb 2026 – now",
   [Product Owner / Product Engineer · Distributed Assets],
   [
-    Building our systems with agentic loops; owning roadmap and
-    prioritisation for the team.
+    Owning roadmap and prioritisation for the team; building our
+    systems with AI coding agents.
   ],
 )
 
@@ -136,9 +145,9 @@ small team, or training a model.
   "Dec 2024 – Feb 2026",
   [Software Engineer · Distributed Assets],
   [
-    Built Flower Bridge end-to-end — the integration platform for
-    distributed energy assets (residential and C&I batteries, solar, EVs,
-    heat pumps): Databricks data pipelines, backend APIs, and web
+    Built Flower Bridge, the integration platform for distributed energy
+    assets (residential and C&I batteries, solar, EVs, heat pumps),
+    end-to-end: Databricks data pipelines, backend APIs, and web
     interfaces.
   ],
 )
@@ -216,12 +225,13 @@ small team, or training a model.
 
 #section[Open source]
 
-500+ stars across repositories on
+550+ stars across repositories on
 #link("https://github.com/bartolsthoorn")[github.com/bartolsthoorn].
 Highlights:
-#link("https://github.com/bartolsthoorn/NVDSP")[NVDSP] — iOS / macOS audio DSP library (417★);
-#link("https://github.com/bartolsthoorn/NQS-numpy")[NQS-numpy] — neural-network quantum states in NumPy (35★);
-#link("https://github.com/bartolsthoorn/gohighs")[gohighs] — Go bindings for the HiGHS optimizer.
+#link("https://github.com/bartolsthoorn/NVDSP")[NVDSP], an iOS / macOS audio DSP library (418★);
+#link("https://github.com/bartolsthoorn/NQS-numpy")[NQS-numpy], neural-network quantum states in NumPy (35★);
+#link("https://github.com/bartolsthoorn/simhash-rs")[simhash-rs], a Rust implementation of SimHash (25★);
+#link("https://github.com/bartolsthoorn/gohighs")[gohighs], Go bindings for the HiGHS optimizer.
 
 // ── Skills & languages ──────────────────────────────────────────────────────
 
